@@ -1,0 +1,5 @@
+{
+  "app_bar.title": "Where in the world?",
+  "app_bar.button.dark_mode.title": "Dark Mode",
+  "query.error.title": "There was an error when trying to fetch the list of countries."
+}
