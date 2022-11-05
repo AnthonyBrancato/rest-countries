@@ -18,6 +18,9 @@ export interface Countries {
   population: number;
   region: string;
   capital: string[];
+  flags: {
+    png: string;
+  };
 }
 
 async function fetchCountries() {
@@ -32,6 +35,9 @@ function countriesDeserializer(data: Countries[]) {
       region: country['region'],
       capital: country['capital'],
       population: country['population'],
+      flags: {
+        png: country['flags']?.png,
+      },
     };
   });
 }

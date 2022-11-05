@@ -1,36 +1,28 @@
-import { FixedSizeList as List } from 'react-window';
-import AutoSizer from 'react-virtualized-auto-sizer';
+import * as React from 'react';
 
+import { Card } from 'components';
 import { useCountriesListQueryManager } from './CountriesListQueryManager';
-
-const CountryList = ({ capital, population, region, name, style }: any) => {
-  return (
-    <ul style={style}>
-      <li>Capital: {capital}</li>
-      <li>Population: {population}</li>
-      <li>Region: {region}</li>
-      <li>Name: {name}</li>
-    </ul>
-  );
-};
+import { FixedSizeList as List } from 'react-window';
 
 function CountriesList() {
   const { data } = useCountriesListQueryManager();
 
+  if (!data) return null;
+
   return (
-    <AutoSizer>
-      {({ height, width }) => (
-        <List
-          height={height}
-          width={width}
-          itemCount={data?.length || 25}
-          itemData={data}
-          itemSize={35}
-        >
-          {CountryList}
-        </List>
-      )}
-    </AutoSizer>
+    <React.Fragment>
+      <List
+        itemData={data}
+        itemSize={400}
+        itemCount={data?.length}
+        width={350}
+        height={800}
+      >
+        {({ data, index, style }) => {
+          return <Card key={index} data={data[index]} style={style} />;
+        }}
+      </List>
+    </React.Fragment>
   );
 }
 

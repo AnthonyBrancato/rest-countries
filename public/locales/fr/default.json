@@ -1,4 +1,8 @@
 {
   "app_bar.title": "Où dans le monde ?",
-  "app_bar.button.dark_mode.title": "Mode sombre"
+  "app_bar.button.dark_mode.title": "Mode sombre",
+  "query.error.title": "Erreur lors de la recuperation des donnees",
+  "card.metadata.population.title": "Population",
+  "card.metadata.region.title": "Region",
+  "card.metadata.capital.title": "Capitale"
 }
