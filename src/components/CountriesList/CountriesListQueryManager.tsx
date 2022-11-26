@@ -5,7 +5,7 @@ import {
 import * as React from 'react';
 
 interface ICountriesListQueryManagerContext {
-  data: Countries[] | undefined;
+  data: Countries[];
   isError: boolean;
   isLoading: boolean;
   isFetching: boolean;
@@ -29,7 +29,7 @@ function CountriesListQueryManager({
   return (
     <CountriesListQueryManagerContext.Provider
       value={{
-        data,
+        data: data || [],
         isError,
         isLoading,
         isFetching,

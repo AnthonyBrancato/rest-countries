@@ -1,27 +1,35 @@
+import { formatNumber } from 'helpers/formatNumber';
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 
 interface Props {
   metadata: {
-    capital: string[];
-    population: number;
-    region: string;
+    capital?: string[];
+    population?: number;
+    region?: string;
   };
 }
 
 export function CardMetadata({ metadata }: Props) {
+  const { capital, population, region } = metadata;
   const { t } = useTranslation();
   return (
     <React.Fragment>
       <p>
-        <span>{t('card.metadata.population.title')}</span>:{' '}
-        {metadata.population}
+        <span className="font-semibold">
+          {t('card.metadata.population.title')}
+        </span>
+        : {formatNumber(population)}
       </p>
       <p>
-        <span>{t('card.metadata.region.title')}</span>: {metadata.region}
+        <span className="font-semibold">{t('card.metadata.region.title')}</span>
+        : {region}
       </p>
       <p>
-        <span>{t('card.metadata.capital.title')}</span>: {metadata.capital}
+        <span className="font-semibold">
+          {t('card.metadata.capital.title')}
+        </span>
+        : {capital}
       </p>
     </React.Fragment>
   );

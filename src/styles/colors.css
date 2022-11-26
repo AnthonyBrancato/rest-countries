@@ -1,12 +1,14 @@
 :root {
-    --deeper-dark-blue: hsl(200, 15%, 8%);
-    --dark-gray: hsl(0, 0%, 52%);
-    --lighter-light-gray: hsl(0, 0%, 98%);
+    --light-mode-text: hsl(200, 15%, 8%);
+    --light-mode-input: hsl(0, 0%, 52%);
+    --light-mode-background: hsl(0, 0%, 98%);
     --white: hsl(0, 0%, 100%);
 }
 
 body[class="dark-theme"] {
-    --deepter-dark-blue: hsl(207, 26%, 17%);
+    --light-mode-text: hsl(0, 0%, 100%);
+    --light-mode-input: hsl(0, 0%, 52%);
+    --light-mode-background: hsl(207, 26%, 17%);
     --dark-blue: hsl(209, 23%, 22%);
     --white: hsl(0, 0%, 100%);
 }

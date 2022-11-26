@@ -1,0 +1,4 @@
+.app-bar {
+    background-color: var(--white) !important;
+    position: unset !important;
+}

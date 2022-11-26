@@ -2,17 +2,17 @@ import { Routes, Route } from 'react-router-dom';
 
 import { CountriesView } from 'pages/CountriesView';
 import { NotFound } from 'pages/NotFound';
-
-import { Layout } from './components';
+import CountryView from 'pages/CountryView';
 
 function App() {
   return (
-    <Layout>
-      <Routes>
-        <Route path="/" element={<CountriesView />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Layout>
+    <Routes>
+      <Route path="/">
+        <Route index element={<CountriesView />} />
+        <Route path=":name" element={<CountryView />} />
+      </Route>
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

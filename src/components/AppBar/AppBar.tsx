@@ -1,4 +1,5 @@
 import { DarkMode } from '@mui/icons-material';
+import { Box, AppBar as MUIAppBar, Toolbar } from '@mui/material';
 
 import Button from 'components/Button';
 import Heading from 'components/Heading';
@@ -8,16 +9,20 @@ function AppBar() {
   const { t } = useTranslation();
 
   return (
-    <header className="flex flex-1 justify-between items-center h-20">
-      <div>
-        <Heading>{t('app_bar.title')}</Heading>
-      </div>
-      <div>
-        <Button variant="text" startIcon={<DarkMode />}>
-          {t('app_bar.button.dark_mode.title')}
-        </Button>
-      </div>
-    </header>
+    <MUIAppBar component="nav" className="app-bar">
+      <Toolbar className="flex justify-between">
+        <div>
+          <Heading className="heading-lg heading-lg-bold typo-text">
+            {t('app_bar.title')}
+          </Heading>
+        </div>
+        <Box sx={{ display: { sm: 'block' } }}>
+          <Button variant="text" startIcon={<DarkMode />} className="typo-text">
+            {t('app_bar.button.dark_mode.title')}
+          </Button>
+        </Box>
+      </Toolbar>
+    </MUIAppBar>
   );
 }
 

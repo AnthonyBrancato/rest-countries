@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('./styles/colors.css');
+@import url('./styles/heading/Heading.css');
+@import url('./styles/typo/typo.css');
+@import url('./styles/components/Appbar.css');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

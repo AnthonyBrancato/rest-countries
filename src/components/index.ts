@@ -1,6 +1,9 @@
-export { default as Layout } from './Layout';
 export { default as AppBar } from './AppBar';
 export { default as Heading } from './Heading';
 export { default as CountriesSearch } from './CountriesSearch';
 export { default as CountriesList } from './CountriesList';
 export { default as Card } from './Card';
+export { default as CountriesLayout } from './CountriesLayout';
+export { default as Country } from './Country';
+export { default as SelectDropdown } from './SelectDropdown';
+export { default as CountriesFilter } from './CountriesFilter';

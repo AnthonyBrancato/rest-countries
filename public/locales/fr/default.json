@@ -4,5 +4,12 @@
   "query.error.title": "Erreur lors de la recuperation des donnees",
   "card.metadata.population.title": "Population",
   "card.metadata.region.title": "Region",
-  "card.metadata.capital.title": "Capitale"
+  "card.metadata.capital.title": "Capitale",
+  "search_bar.placeholder": "Rechercher un pays",
+  "select_dropdown.filter.title": "Filtrer par region",
+  "select_dropdown.filter.region.africa": "Afrique",
+  "select_dropdown.filter.region.america": "Amerique",
+  "select_dropdown.filter.region.asia": "Asie",
+  "select_dropdown.filter.region.europe": "Europe",
+  "select_dropdown.filter.region.oceania": "Oceanie"
 }

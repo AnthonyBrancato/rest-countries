@@ -1,8 +1,16 @@
 {
   "app_bar.title": "Where in the world?",
   "app_bar.button.dark_mode.title": "Dark Mode",
-  "query.error.title": "There was an error when trying to fetch the list of countries.",
+  "query.error.title": "There was an error while trying to fetch the list of countries.",
+  "country_query.error.title": "There was an error while trying to fetch a country.",
   "card.metadata.population.title": "Population",
   "card.metadata.region.title": "Region",
-  "card.metadata.capital.title": "Capital"
+  "card.metadata.capital.title": "Capital",
+  "search_bar.placeholder": "Search for a country",
+  "select_dropdown.filter.title": "Filter by region",
+  "select_dropdown.filter.region.africa": "Africa",
+  "select_dropdown.filter.region.america": "America",
+  "select_dropdown.filter.region.asia": "Asia",
+  "select_dropdown.filter.region.europe": "Europe",
+  "select_dropdown.filter.region.oceania": "Oceania"
 }
